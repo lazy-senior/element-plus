@@ -364,7 +364,7 @@ export default defineComponent({
         'is-required': isRequired.value || props.required,
         'is-no-asterisk': elForm.hideRequiredAsterisk,
       },
-      sizeClass.value ? 'el-form-item--' + sizeClass.value : '',
+      sizeClass.value ? `el-form-item--${sizeClass.value}` : '',
     ])
 
     const shouldShowError = computed(() => {
