@@ -15,7 +15,7 @@
           class="el-popconfirm__icon"
           :style="{ color: iconColor }"
         ></i>
-        {{ title }}
+        <slot>{{title}}</slot>
       </p>
       <div class="el-popconfirm__action">
         <el-button size="mini" :type="cancelButtonType" @click="cancel">
